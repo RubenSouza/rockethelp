@@ -1,6 +1,6 @@
 import { useState } from "react";
-import auth from "@react-native-firebase/auth";
 import { Alert } from "react-native";
+import auth from "@react-native-firebase/auth";
 import { VStack, Heading, Icon, useTheme } from "native-base";
 import { Envelope, Key } from "phosphor-react-native";
 import Logo from "../assets/logo_primary.svg";
@@ -27,14 +27,14 @@ export function SignIn() {
         setIsLoading(false);
 
         if (error.code === "auth/invalid-email") {
-          return Alert.alert("Entrar", "Email inválido.");
+          return Alert.alert("Entrar", "Digite um email válido.");
         }
         if (error.code === "auth/wrong-password") {
-          return Alert.alert("Entrar", "Email ou senha inválida.");
+          return Alert.alert("Entrar", "Email ou senha inválidos.");
         }
 
         if (error.code === "auth/user-not-found") {
-          return Alert.alert("Entrar", "Email ou senha inválida.");
+          return Alert.alert("Entrar", "Email ou senha inválidos.");
         }
 
         return Alert.alert("Entrar", "Ocorreu um erro no acesso");
