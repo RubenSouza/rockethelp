@@ -1,7 +1,8 @@
 {
   "expo": {
-    "name": "com.rockethelp",
-    "slug": "com.rockethelp",
+    "name": "RocketHelp",
+    "slug": "rockethelp",
+    "owner": "lordezell",
     "version": "1.0.0",
     "assetBundlePatterns": ["**/*"],
     "plugins": ["@react-native-firebase/app"],
