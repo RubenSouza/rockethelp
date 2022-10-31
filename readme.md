@@ -2,6 +2,8 @@
 
 Aplicação desenvolvida durante o Ignite Lab React Native para gerenciar em tempo real solicitações de manutenção e suporte a equipamentos.
 
+<img src="./src\assets\appPreview.gif" width="250px" height="500px" />
+
 ## Stack
 
 - React Native
